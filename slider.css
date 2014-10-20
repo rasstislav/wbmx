@@ -1,0 +1,109 @@
+#slider-wrap
+{
+	position: relative;
+}
+
+#slider 
+{
+	overflow: hidden;
+	height: 350px;
+	position: relative;
+}
+
+#slider .slide
+{
+	background: white;
+	display: none;
+	width: 100%;
+	height: 100%;
+}
+
+#slider .slide-popis
+{
+	width: 33.3%;
+	height: 100%;
+	position: relative;
+}
+
+#slider .slide-popis h1
+{
+	width: 100%;
+	font-size: 55px;
+	text-transform: uppercase;
+	text-align: center;
+	padding: 0;
+	margin: 0;
+	font-weight: 200;
+	letter-spacing: 7px;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+}
+
+#slider .slide-popis h1 span
+{
+	display: block;
+}
+
+#slider .slide-obrazok
+{
+	width: 66.6%;
+	position: relative;
+	height: 100%;
+}
+
+#slider .slide-obrazok .sipka
+{
+	position: absolute;
+	width: 11px;
+	height: 100%;
+	background: url(http://webmax.sk/themes/webmax/images/beak_R.png) no-repeat left center;
+}
+
+#slider .slide-obrazok img
+{
+	width: 100%;
+	height: auto;
+}
+
+#slider-wrap #predchadzajuci, #slider-wrap #nasledujuci
+{
+	position: absolute;
+	display: none;
+	background: url("http://webmax.sk/themes/webmax/images/slider.png") no-repeat;
+	width: 24px;
+	height: 48px;
+	top: 50%;
+	transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	cursor: pointer;
+}
+
+#slider-wrap #predchadzajuci
+{
+	left: -50px;
+	background-position: 0 0;
+}
+
+#slider-wrap #predchadzajuci:hover
+{
+	background-position: 0 -48px;
+}
+
+#slider-wrap #nasledujuci
+{
+	right: -50px;
+	background-position: -24px 0;
+}
+
+#slider-wrap #nasledujuci:hover
+{
+	background-position: -24px -48px;
+}
