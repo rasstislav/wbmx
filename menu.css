@@ -1,0 +1,59 @@
+.menu ul
+{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	text-transform: uppercase;
+	width: 100%;
+}
+
+#drop-down-menu li
+{
+	padding-left: 40px;
+}
+
+#menu-hlavne > ul > li > a
+{
+	display: none;
+	padding: 8px 0 8px 15px;
+	background: white;
+}
+
+body.noScript #menu-hlavne > ul > li:hover > ul#drop-down-menu
+{
+      display: block;
+}
+
+.menu li a
+{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+	color: #6a6a6a;
+}
+
+#drop-down-menu li a
+{
+	padding: 45px 0 34px 0;
+}
+
+.menu li a:hover, .menu li a.active
+{
+	color: #82d70e;
+}
+
+#drop-down-menu li a.active
+{
+	border-bottom: 2px solid #adadad;
+	padding-bottom: 32px;
+}
+
+#menu-spodne ul li
+{
+	padding-right: 40px;
+}
+
+#menu-spodne li:last-child
+{
+	padding-right: 0;
+}
