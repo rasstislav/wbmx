@@ -1,0 +1,282 @@
+@media(min-width: 769px)
+{
+  #drop-down-menu
+  {
+	display: block;
+  }
+}
+
+@media(max-width: 1200px)
+{
+  #slider-wrap #predchadzajuci
+  {
+	left: -30px;
+  }
+
+  #slider-wrap #nasledujuci
+  {
+	right: -30px;
+  }
+}
+
+@media(max-width: 1000px)
+{
+  #slider
+  {
+	height: 317px;
+  }
+
+  #drop-down-menu li
+  {
+	padding-left: 30px;
+  }
+
+  #menu-spodne ul li
+  {
+	padding-right: 30px;
+  }
+
+
+  #slider .slide-popis h1
+  {
+	font-size: 40px;
+  }
+
+  #slider-wrap #predchadzajuci
+  {
+	left: -10px;
+  }
+
+  #slider-wrap #nasledujuci
+  {
+	right: -10px;
+  }
+}
+
+@media(max-width: 800px)
+{
+  #slider
+  {
+	height: 270px;
+  }
+
+  #slider .slide-popis h1
+  {
+	font-size: 40px;
+  }
+}
+
+@media(max-width: 768px)
+{
+  #logo
+  {
+	width: 100%;
+  }
+
+  #logo a img
+  {
+	margin: 0 auto;
+  }
+
+  #menu-hlavne
+  {
+	float: left;
+	width: 100%;
+	margin-bottom: 30px;
+  }
+
+  #menu-hlavne > ul > li > a
+  {
+	display: block;
+  }
+
+  #drop-down-menu
+  {
+	display: none;
+	float: left;
+  }
+
+  #drop-down-menu li
+  {
+	float: none;
+	padding-left: 0;
+	margin: 0.5px 0;
+  }
+
+  #drop-down-menu li a
+  {
+	padding: 0;
+	background: white;
+	padding: 8px 0 8px 20px;
+  }
+
+  #drop-down-menu li a.active
+  {
+	border-bottom: none;
+	padding-bottom: 8px;
+	color: white;
+	background: #82d70e;
+  }
+
+  #slider
+  {
+	height: 361px;
+  }
+
+  #slider .slide-popis, #slider .slide-obrazok
+  {
+	width: 100%;
+	height: auto;
+	float: left;
+  }
+
+  #slider .slide-popis h1
+  {
+	margin: 10px 0;
+	letter-spacing: 4px;
+	padding-top: 15px;
+	position: inherit;
+	top: 0;
+	transform: none;
+	-ms-transform: none;
+	-webkit-transform: none;
+	-o-transform: none;
+	-moz-transform: none;
+  }
+
+  #slider .slide-popis h1 span
+  {
+	display: inline-block;
+  }
+
+  #slider .slide-obrazok .sipka
+  {
+	display: none;
+  }
+
+  #content .sub-content .nazov a
+  {
+	width: auto;
+	padding: 0 10px;
+  }
+
+  #content .popis .text, #content .sub-content .obrazok
+  {
+	float: left;
+	width: auto
+  }
+
+  #content .sub-content .galeria .obrazok
+  {
+	width: 48%;
+	margin-bottom: 10px;
+  }
+
+  #content #povedali .left
+  {
+	width: 100%;
+  }
+
+  #content #povedali h2
+  {
+	background: none;
+	padding-bottom: 20px;
+  }
+
+  #footer ul.odkazy, #footer #tvorba
+  {
+	width: 100%;
+  }
+
+  #footer #tvorba
+  {
+	padding-top: 30px;
+  }
+}
+
+@media(max-width: 500px)
+{
+  #slider
+  {
+	height: 359px;
+  }
+
+  #content .sub-content .galeria .obrazok
+  {
+	width: 50%;
+  }
+
+  #content .sub-content .galeria span
+  {
+	font-size: 18px;
+  }
+}
+
+@media(max-width: 400px)
+{
+  #slider
+  {
+	height: 298px;
+  }
+
+  #content .popis .text p
+  {
+	text-align: left;
+  }
+
+  #content .sub-content .galeria .obrazok
+  {
+	width: 100%;
+  }
+}
+
+@media(max-device-width: 1300px) and (orientation: portrait)
+{
+  #slider .slide-popis h1 span
+  {
+	display: inline-block;
+  }
+}
+
+@media(max-device-width: 1300px) and (orientation: landscape)
+{
+  #slider .slide-popis h1 span
+  {
+	display: block;
+  }
+}
+
+@media(max-device-width: 800px) and (orientation: landscape)
+{
+  #slider .slide-popis h1 span
+  {
+	display: inline-block;
+  }
+}
+
+@media(max-device-width: 800px)
+{
+  #slider .slide-popis h1
+  {
+	position: inherit;
+	top: 0;
+	transform: none;
+	-ms-transform: none;
+	-webkit-transform: none;
+	-o-transform: none;
+	-moz-transform: none;
+  }
+}
+
+@media(max-device-width: 500px) and (orientation: portrait)
+{
+  #slider
+  {
+	height: 335px;
+  }
+
+  #slider .slide-popis h1 span
+  {
+	display: block;
+  }
+}
