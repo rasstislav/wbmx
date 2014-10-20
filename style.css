@@ -1,0 +1,316 @@
+html
+{
+	background: url("http://webmax.sk/themes/webmax/images/pattern.png")  0 0;
+}
+
+body
+{
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	font-family: 'Open Sans', sans-serif;/*Myriad*/
+	color: #6a6a6a;
+}
+
+#wrapper a
+{
+	display: block;
+	text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6
+{
+	font-family: 'Yanone Kaffeesatz', sans-serif;/*Kyrial*/
+	font-weight: 300;
+}
+
+.clear
+{
+	clear: both;
+}
+
+.container
+{
+	margin: 0 auto;
+	width: 990px;
+	max-width: 100%;
+}
+
+.blok
+{
+	background: url("http://webmax.sk/themes/webmax/images/divider.png") no-repeat center bottom;
+	padding: 40px 15px;
+}
+
+.left
+{
+	float: left;
+}
+
+.right
+{
+	float: right;
+}
+
+.modra
+{
+	color: #28a3f0;
+}
+
+.zelena
+{
+	color: #82d70e;
+}
+
+.cervena
+{
+	color: #f86b76;
+}
+
+.modre
+{
+	background-color: #28a3f0;
+}
+
+.zelene
+{
+	background-color: #82d70e;
+}
+
+.cervene
+{
+	background-color: #f86b76;
+}
+
+.a-img
+{
+	display: block;
+}
+
+#wrapper
+{
+
+}
+
+#header
+{
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+#header #logo a
+{
+	background: url("http://webmax.sk/themes/webmax/images/logo.png") no-repeat center center;
+	width: 151px;
+	height: 35px;
+	padding: 34px 0;
+	margin: 0 auto;
+}
+
+#header #logo a span
+{
+	display: none;
+}
+
+#content .sub-content .nazov h2
+{
+	margin: 0;
+	padding: 0;
+	font-size: 30px;
+	margin-bottom: 30px;
+}
+
+#content .sub-content .nazov .cislo
+{
+	font-size: 40px;
+}
+
+
+#content .sub-content .nazov a
+{
+	color: white;
+	text-align: center;
+	font-size: 25px;
+	width: 240px;
+	height: 44px;
+	line-height: 45px;
+	letter-spacing: 2px;
+}
+
+#content .sub-content .obrazok
+{
+	width: 33%;
+}
+
+#content .sub-content a img
+{
+	width: 100%;
+	height: auto;
+}
+
+#content .popis .text
+{
+	width: 67%;
+	background: white;
+}
+
+#content .sub-content .popis .text h3
+{
+	margin: 0;
+	padding: 30px 0 0 30px;
+	font-size: 27px;
+}
+
+#content .popis .text p 
+{
+	padding: 0 30px;
+	line-height: 22px;
+	text-align: justify;
+	font-size: 15px;
+}
+
+#content .sub-content .galeria 
+{
+	margin: 0 -0.66%;
+}
+
+#content .sub-content .galeria .obrazok 
+{
+	width: 32%;
+	padding: 0 0.66%;
+	position: relative;
+}
+
+#content .sub-content .galeria .obrazok a
+{
+	background: white;
+}
+
+#content .sub-content .galeria  span
+{
+	text-align: center;
+	width: 100%;
+	display: block;
+	font-size: 22px;
+	font-weight: 300;
+}
+
+#content #ponuka
+{
+	text-align: center;
+	font-size: 27px;
+}
+
+#content #ponuka a
+{
+	display: initial;
+	text-decoration: underline;
+}
+
+#content #ponuka a:hover
+{
+	color: #f86b76;
+}
+
+#content #povedali .left
+{
+	width: 33%;
+}
+
+#content #povedali h2
+{
+	font-size:30px;
+	background: url("http://webmax.sk/themes/webmax/images/beak_L.png") no-repeat right center;
+	padding-left: 20px;
+	margin: 0;
+}
+
+#footer
+{
+	background: none;
+	padding: 40px 15px 10px 15px;
+}
+
+#footer ul.odkazy
+{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	width: 33%;
+}
+
+#footer ul.odkazy a
+{
+	width: 43px;
+	height: 43px;
+	margin: 0 5px;
+
+	background: url("http://webmax.sk/themes/webmax/images/social_sprite.png");
+	background-repeat: no-repeat;
+}
+
+#footer ul.odkazy a#google
+{
+	background-position: 0 0;
+}
+
+#footer ul.odkazy a#google:hover
+{
+	background-position: 0 -43px;
+}
+
+#footer ul.odkazy a#facebook
+{
+	background-position: -43px 0;
+}
+
+#footer ul.odkazy a#facebook:hover
+{
+	background-position: -43px -43px;
+}
+
+#footer ul.odkazy a#twitter
+{
+	background-position: -86px 0;
+}
+
+#footer ul.odkazy a#twitter:hover
+{
+	background-position: -86px -43px;
+}
+
+#footer ul.odkazy a#linkedin
+{
+	background-position: -129px 0;
+}
+
+#footer ul.odkazy a#linkedin:hover
+{
+	background-position: -129px -43px;
+}
+
+#footer ul.odkazy a span
+{
+	display: none;
+}
+
+#footer #tvorba
+{
+	width: 67%;
+}
+
+#footer #tvorba #copyright
+{
+	font-size: 13px;
+}
+
+#footer #tvorba #copyright a
+{
+	display: initial;
+	color: #f86b76;
+}
+
+#footer #tvorba #copyright a:hover
+{
+	text-decoration: underline;
+}
