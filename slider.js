@@ -44,7 +44,7 @@ var timer = function()
 var index = 0;
 var aktind = 0;
 var znova = false;
-var cas = 2000;
+var cas = 5000;
 var interval;
 var done = true;
 
