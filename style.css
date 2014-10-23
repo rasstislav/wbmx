@@ -12,21 +12,30 @@ body
 	color: #6a6a6a;
 }
 
-#wrapper a
+nav, header, article, footer
+{
+	display: block;
+}
+
+a
 {
 	display: block;
 	text-decoration: none;
 }
 
-h1, h2, h3, h4, h5, h6
+h1, h2, h3, h4, h5, h6, #content .sub-content .galeria span, #content #ponuka
 {
 	font-family: 'Yanone Kaffeesatz', sans-serif;/*Kyrial*/
 	font-weight: 300;
 }
 
-.clear
+.clearfix:after
 {
-	clear: both;
+   content: " ";
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
 }
 
 .container
@@ -39,7 +48,7 @@ h1, h2, h3, h4, h5, h6
 .blok
 {
 	background: url("http://webmax.sk/themes/webmax/images/divider.png") no-repeat center bottom;
-	padding: 40px 15px;
+	padding: 30px 15px 40px 15px;
 }
 
 .left
@@ -87,6 +96,11 @@ h1, h2, h3, h4, h5, h6
 	display: block;
 }
 
+.a-img img
+{
+	display: block;
+}
+
 #wrapper
 {
 
@@ -96,13 +110,11 @@ h1, h2, h3, h4, h5, h6
 {
 	padding-top: 0;
 	padding-bottom: 0;
+	margin-bottom: 10px;
 }
 
 #header #logo a
 {
-	background: url("http://webmax.sk/themes/webmax/images/logo.png") no-repeat center center;
-	width: 151px;
-	height: 35px;
 	padding: 34px 0;
 	margin: 0 auto;
 }
@@ -118,11 +130,13 @@ h1, h2, h3, h4, h5, h6
 	padding: 0;
 	font-size: 30px;
 	margin-bottom: 30px;
+	height: 44px;
 }
 
 #content .sub-content .nazov .cislo
 {
 	font-size: 40px;
+	font-style: normal;
 }
 
 
@@ -135,6 +149,11 @@ h1, h2, h3, h4, h5, h6
 	height: 44px;
 	line-height: 45px;
 	letter-spacing: 2px;
+}
+
+#content .sub-content .nazov a:hover
+{
+	background: #6a6a6a;
 }
 
 #content .sub-content .obrazok
@@ -152,21 +171,23 @@ h1, h2, h3, h4, h5, h6
 {
 	width: 67%;
 	background: white;
+	padding: 30px 0 30px 0;
 }
 
 #content .sub-content .popis .text h3
 {
 	margin: 0;
-	padding: 30px 0 0 30px;
+	padding-left: 30px;
 	font-size: 27px;
+	margin-bottom: 15px;
 }
 
 #content .popis .text p 
 {
 	padding: 0 30px;
-	line-height: 22px;
-	text-align: justify;
-	font-size: 15px;
+	line-height: 23px;
+	font-size: 14px;
+	margin: 0;
 }
 
 #content .sub-content .galeria 
@@ -184,26 +205,29 @@ h1, h2, h3, h4, h5, h6
 #content .sub-content .galeria .obrazok a
 {
 	background: white;
+	padding-bottom: 4px;
 }
 
-#content .sub-content .galeria  span
+#content .sub-content .galeria span
 {
 	text-align: center;
 	width: 100%;
 	display: block;
-	font-size: 22px;
-	font-weight: 300;
+	font-size: 25px;
+	padding: 6px 0 2px 0;
+	letter-spacing: 1px;
 }
 
 #content #ponuka
 {
 	text-align: center;
 	font-size: 27px;
+	letter-spacing: 2px;
 }
 
 #content #ponuka a
 {
-	display: initial;
+	display: inline-block;
 	text-decoration: underline;
 }
 
@@ -223,6 +247,17 @@ h1, h2, h3, h4, h5, h6
 	background: url("http://webmax.sk/themes/webmax/images/beak_L.png") no-repeat right center;
 	padding-left: 20px;
 	margin: 0;
+}
+
+#content #povedali .text
+{
+	padding: 30px 0 7px 0;
+}
+
+#content #povedali .text span
+{
+	padding: 1em 0;
+	display: inline-block;
 }
 
 #footer
@@ -306,7 +341,7 @@ h1, h2, h3, h4, h5, h6
 
 #footer #tvorba #copyright a
 {
-	display: initial;
+	display: inline-block;
 	color: #f86b76;
 }
 
