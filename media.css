@@ -21,11 +21,6 @@
 
 @media(max-width: 1000px)
 {
-  #slider
-  {
-	height: 317px;
-  }
-
   #drop-down-menu li
   {
 	padding-left: 30px;
@@ -39,27 +34,22 @@
 
   #slider .slide-popis h1
   {
-	font-size: 40px;
+	font-size: 45px;
   }
 
   #slider-wrap #predchadzajuci
   {
-	left: -10px;
+	left: 5px;
   }
 
   #slider-wrap #nasledujuci
   {
-	right: -10px;
+	right: 5px;
   }
 }
 
 @media(max-width: 800px)
 {
-  #slider
-  {
-	height: 270px;
-  }
-
   #slider .slide-popis h1
   {
 	font-size: 40px;
@@ -118,9 +108,14 @@
 	background: #82d70e;
   }
 
-  #slider
+  #slider .slide
   {
-	height: 361px;
+	display: none;
+  }
+
+  #slider #slide-prioritny
+  {
+	position: relative;
   }
 
   #slider .slide-popis, #slider .slide-obrazok
@@ -196,11 +191,6 @@
 
 @media(max-width: 500px)
 {
-  #slider
-  {
-	height: 359px;
-  }
-
   #content .sub-content .galeria .obrazok
   {
 	width: 50%;
@@ -214,9 +204,9 @@
 
 @media(max-width: 400px)
 {
-  #slider
+  #slider .slide-popis h1 span
   {
-	height: 298px;
+	display: block;
   }
 
   #content .popis .text p
@@ -234,49 +224,14 @@
 {
   #slider .slide-popis h1 span
   {
-	display: inline-block;
-  }
-}
-
-@media(max-device-width: 1300px) and (orientation: landscape)
-{
-  #slider .slide-popis h1 span
-  {
 	display: block;
   }
 }
 
-@media(max-device-width: 800px) and (orientation: landscape)
+@media(max-device-width: 800px) and (orientation: portrait)
 {
   #slider .slide-popis h1 span
   {
 	display: inline-block;
-  }
-}
-
-@media(max-device-width: 800px)
-{
-  #slider .slide-popis h1
-  {
-	position: inherit;
-	top: 0;
-	transform: none;
-	-ms-transform: none;
-	-webkit-transform: none;
-	-o-transform: none;
-	-moz-transform: none;
-  }
-}
-
-@media(max-device-width: 500px) and (orientation: portrait)
-{
-  #slider
-  {
-	height: 335px;
-  }
-
-  #slider .slide-popis h1 span
-  {
-	display: block;
   }
 }
