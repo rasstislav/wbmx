@@ -8,8 +8,13 @@ body
 	margin: 0;
 	padding: 0;
 	height: 100%;
-	font-family: 'Open Sans', sans-serif;/*Myriad*/
+	font-family: "MyriadPro-Regular", sans-serif;
 	color: #6a6a6a;
+}
+
+body.script .noScript
+{
+  display: none;
 }
 
 nav, header, article, footer
@@ -23,10 +28,71 @@ a
 	text-decoration: none;
 }
 
+a.link
+{
+  display: inline-block;
+  color: #f86b76;
+}
+
+a.sipka
+{
+  padding-right: 12px;
+  background: url("http://webmax.sk/themes/webmax/images/link.png") no-repeat right center;
+  display: inline;
+}
+
+a.link:hover
+{
+	text-decoration: underline;
+}
+
+b
+{
+  font-family: "MyriadPro-Bold", sans-serif;
+}
+
 h1, h2, h3, h4, h5, h6, #content .sub-content .galeria span, #content #ponuka
 {
-	font-family: 'Yanone Kaffeesatz', sans-serif;/*Kyrial*/
+	font-family: "KyrialSansProLightCond", sans-serif;
 	font-weight: 300;
+}
+
+label
+{
+  font-size: 15px;
+  color: #4d4d4d;
+  cursor: pointer;
+  display: block;
+  font-weight: 500;
+  margin-bottom: 3px;
+}
+
+.reveal-modal-bg
+{ 
+		position: fixed; 
+		height: 100%;
+		width: 100%;
+		background: rgba(0, 0, 0, 0.35);
+		z-index: 100;
+		display: none;
+		top: 0;
+		left: 0; 
+}
+
+.reveal-modal
+{
+  background: #fff;
+  visibility: hidden;
+  display: none;
+  top: 100px;
+  left: 50%;
+  margin-left: -260px;
+  width: 520px;
+  position: absolute;
+  z-index: 101;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 }
 
 .clearfix:after
@@ -62,7 +128,7 @@ h1, h2, h3, h4, h5, h6, #content .sub-content .galeria span, #content #ponuka
 }
 
 .modra
-{
+{         
 	color: #28a3f0;
 }
 
@@ -101,9 +167,24 @@ h1, h2, h3, h4, h5, h6, #content .sub-content .galeria span, #content #ponuka
 	display: block;
 }
 
-#wrapper
+.none
 {
+  display: none;
+}
 
+.button
+{
+  font-family: "MyriadPro-Regular", sans-serif;
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.button.zelene:hover
+{
+  background-color: #65a70b;
 }
 
 #header
@@ -128,7 +209,7 @@ h1, h2, h3, h4, h5, h6, #content .sub-content .galeria span, #content #ponuka
 {
 	margin: 0;
 	padding: 0;
-	font-size: 30px;
+	font-size: 32px;
 	margin-bottom: 30px;
 	height: 44px;
 }
@@ -148,7 +229,6 @@ h1, h2, h3, h4, h5, h6, #content .sub-content .galeria span, #content #ponuka
 	width: 240px;
 	height: 44px;
 	line-height: 45px;
-	letter-spacing: 2px;
 }
 
 #content .sub-content .nazov a:hover
@@ -156,12 +236,17 @@ h1, h2, h3, h4, h5, h6, #content .sub-content .galeria span, #content #ponuka
 	background: #6a6a6a;
 }
 
-#content .sub-content .obrazok
+#content .sub-content .obrazok_wrap
 {
-	width: 33%;
+	width: 33.33334%;
 }
 
-#content .sub-content a img
+#content .sub-content .obrazok_wrap .obrazok
+{
+	padding: 0 6px;
+}
+
+#content .sub-content img
 {
 	width: 100%;
 	height: auto;
@@ -169,9 +254,9 @@ h1, h2, h3, h4, h5, h6, #content .sub-content .galeria span, #content #ponuka
 
 #content .popis .text
 {
-	width: 67%;
+	width: 66.66667%;
 	background: white;
-	padding: 30px 0 30px 0;
+	padding: 30px 0 8px 0;
 }
 
 #content .sub-content .popis .text h3
@@ -182,47 +267,83 @@ h1, h2, h3, h4, h5, h6, #content .sub-content .galeria span, #content #ponuka
 	margin-bottom: 15px;
 }
 
-#content .popis .text p 
+#content .popis .text p.citajViac
+{
+  color: white;
+  font-size: 16px;
+	margin-top: -30px;
+  padding: 30px;
+}
+      
+#content .popis .text p
 {
 	padding: 0 30px;
-	line-height: 23px;
-	font-size: 14px;
-	margin: 0;
+  margin: 0;
+	line-height: 22px;
+	font-size: 15px;
+  margin-bottom: 22px;
+}
+
+#content .popis .text ul 
+{
+	padding: 0 30px;
+	margin-left: 18px;
+  line-height: 22px;
+  font-size: 15px;
+  margin-bottom: 22px;
 }
 
 #content .sub-content .galeria 
 {
 	margin: 0 -0.66%;
+  margin-top: 12px;
 }
 
-#content .sub-content .galeria .obrazok 
+#content .sub-content .galeria .obrazok_wrap 
 {
-	width: 32%;
-	padding: 0 0.66%;
+	width: 33.33333%;
 	position: relative;
 }
 
-#content .sub-content .galeria .obrazok a
+#content .sub-content .galeria .obrazok_wrap img 
 {
-	background: white;
-	padding-bottom: 4px;
+	display: block;
 }
 
-#content .sub-content .galeria span
+#content .sub-content .galeria .obrazok_wrap a
+{
+	background: white;
+}
+
+#content .sub-content .galeria .obrazok_wrap a .obrazok_item
+{
+	position: relative;
+}
+
+#content .sub-content .galeria .obrazok_wrap a:hover span.zoom
+{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: url("http://webmax.sk/themes/webmax/images/zoom.png") center center repeat;
+}
+
+#content .sub-content .galeria span.zelena
 {
 	text-align: center;
 	width: 100%;
 	display: block;
-	font-size: 25px;
-	padding: 6px 0 2px 0;
-	letter-spacing: 1px;
+	font-size: 24px;
+	padding: 6px 0 6px 0;
 }
 
 #content #ponuka
 {
 	text-align: center;
-	font-size: 27px;
-	letter-spacing: 2px;
+	font-size: 32px;
+  padding: 37px 15px 43px 15px;
 }
 
 #content #ponuka a
@@ -236,28 +357,288 @@ h1, h2, h3, h4, h5, h6, #content .sub-content .galeria span, #content #ponuka
 	color: #f86b76;
 }
 
+#content #povedali
+{
+	padding-top: 35px;
+  position: relative;
+}
+
 #content #povedali .left
 {
-	width: 33%;
+	width: 33.33334%;
 }
 
 #content #povedali h2
 {
-	font-size:30px;
-	background: url("http://webmax.sk/themes/webmax/images/beak_L.png") no-repeat right center;
+	font-size:32px;
 	padding-left: 20px;
 	margin: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
 }
 
 #content #povedali .text
 {
 	padding: 30px 0 7px 0;
+  position: relative;
+}
+
+#content #povedali .text p
+{
+  margin-bottom: 0;
 }
 
 #content #povedali .text span
 {
 	padding: 1em 0;
 	display: inline-block;
+}
+
+#content #povedali span.sipka
+{
+  height: 100%;
+  width: 11px;
+  position: absolute;
+  top: 0;
+  left: -11px;
+  margin: 0;
+  padding: 0;
+  background: url("http://webmax.sk/themes/webmax/images/beak_L.png") no-repeat center;
+}
+
+#referencie #content .sub-content .nazov a
+{
+  width: auto;
+  margin-left: 10px;
+  padding: 0 13px;
+  font-size: 20px;
+  background: #6a6a6a;
+}
+
+#referencie #content .sub-content .popis .right
+{
+  width: 33.33333%;
+  background: transparent url("http://webmax.sk/themes/webmax/images/beak20_L.png") 3px center no-repeat;
+}
+
+#referencie #content .sub-content .popis .text
+{
+  width: auto;
+  margin-left: 20px;
+}
+
+#referencie #content .sub-content .nazov .buttonUp
+{
+  width: 31.25%;
+  margin-right: 1px;
+}
+
+#referencie #content .sub-content .nazov .buttonUp a.sub-menu-item
+{
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+#referencie #content .sub-content .nazov span.right
+{
+  position: relative;
+}
+
+#referencie #content .sub-content .nazov span.right .buttonPrev, #referencie #content .sub-content .nazov span.right .buttonNext
+{
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  width: 11px;
+}
+
+#referencie #content .sub-content .nazov span.right .buttonPrev
+{
+  left: -16px;
+  background: url("http://webmax.sk/themes/webmax/images/prev.png") left center no-repeat;
+}
+
+#referencie #content .sub-content .nazov span.right .buttonPrev:hover
+{
+  background: url("http://webmax.sk/themes/webmax/images/prev.png") right center no-repeat;
+}
+
+#referencie #content .sub-content .nazov span.right .buttonNext
+{
+  right: -16px;
+  background: url("http://webmax.sk/themes/webmax/images/next.png") left center no-repeat;
+}
+
+#referencie #content .sub-content .nazov span.right .buttonNext:hover
+{
+  background: url("http://webmax.sk/themes/webmax/images/next.png") right center no-repeat;
+}
+
+#referencie #content .sub-content .nazov a:hover, #referencie #content .sub-content .nazov a.active
+{
+	background: #82d70e;
+}
+
+#referencie #content .sub-content .galeria .obrazok_wrap 
+{
+	width: 33.33333%;
+}
+
+#referencie #content .sub-content .obrazok_wrap
+{
+	width: 66.66667%;
+}
+
+#kontakt #content .sub-content .obrazok_wrap
+{
+	width: 66.66667%;
+}
+
+#kontakt #content .popis .text
+{
+	width: 33.33333%;
+}
+
+#kontakt #rkontakt
+{
+  padding: 55px 0 30px 0;
+}
+
+#kontakt #rkontakt div
+{
+	width: 50%;
+	text-align: center;
+  margin-bottom: 25px;
+}
+
+#kontakt #rkontakt div span
+{
+	display: block;
+  padding-top: 10px;
+  font-weight: normal;
+}
+
+#kontakt #rkontakt div span:nth-child(1)
+{
+	font-size: 24px;
+  font-family: "KyrialSansProRegular", sans-serif;
+}
+
+#kontakt #rkontakt div span:nth-child(2)
+{
+  font-size: 43px;
+  color: #28a3f0;
+  font-family: "KyrialSansProLightCond", sans-serif;
+}
+
+#kontakt #rkontakt div span:nth-child(3)
+{
+  font-size: 15px;
+}
+
+#formular
+{
+  
+  padding: 30px;
+  
+}
+
+#formular h2
+{
+  display: block;
+  padding: 0;
+  margin: 0;
+  font-size: 27px;
+  border-bottom: 1px dashed #aeaeae;
+  padding-bottom: 18px;
+  margin-bottom: 18px;
+  position: relative;
+}
+
+#formular input[type="text"], #formular input[type="email"], textarea
+{
+  font-family: inherit;
+  border: 1px solid #cccccc;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  color: rgba(0, 0, 0, 0.75);
+  font-size: 14px;
+  margin: 0 0 12px 0;
+  padding: 6px;
+  width: 100%;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -webkit-transition: all 0.15s linear;
+  -moz-transition: all 0.15s linear;
+  -o-transition: all 0.15s linear;
+  transition: all 0.15s linear;
+}
+
+#formular input[type="text"], #formular input[type="email"]
+{
+  height: 33px;
+}
+
+#formular a
+{
+  font-size: 15px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-align: center;
+}
+
+#formular a:hover
+{
+  background-color: #28a3f0;
+}
+
+#mapa
+{
+  background: white;
+  padding: 15px;
+  margin-left: -298.5px;
+}
+
+#mapa.reveal-modal
+{
+  width: auto;
+}
+
+#mapa_relative
+{
+  position: relative;
+  height: 450px;
+}
+
+#mapa iframe    
+{
+  border: none;
+  width: 550px;
+  height: 100%;
+}
+
+#mapa span    
+{     
+  position: absolute;
+  bottom: 0;
+  background-color: #82d70e;
+  line-height: 20px;
+  margin-bottom: -60px;
+  cursor: default;
+  padding: 10px 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
 }
 
 #footer
@@ -336,16 +717,34 @@ h1, h2, h3, h4, h5, h6, #content .sub-content .galeria span, #content #ponuka
 
 #footer #tvorba #copyright
 {
-	font-size: 13px;
+	font-size: 14px;
 }
 
-#footer #tvorba #copyright a
+#footer #tvorba #copyright span.separator
 {
-	display: inline-block;
-	color: #f86b76;
+	margin: 0 5px;
+	color: #c8c8c8;
 }
 
-#footer #tvorba #copyright a:hover
+#back-top
 {
-	text-decoration: underline;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  width: 29px;
+  height: 58px;
+  overflow: hidden;
+}
+
+#back-top a
+{
+  display: block;
+  width: 29px;
+  height: 58px;
+  background: url("http://webmax.sk/themes/webmax/images/scroll.png") 0 0 no-repeat;
+}
+
+#back-top a:hover, #back-top a:focus
+{
+  background: url("http://webmax.sk/themes/webmax/images/scroll.png") 0 -58px no-repeat;
 }

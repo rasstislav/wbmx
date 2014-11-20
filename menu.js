@@ -1,4 +1,5 @@
 $('body').removeClass('noScript');
+$('body').addClass('script');
 
 function showMenu()
 {

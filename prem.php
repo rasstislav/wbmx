@@ -1,0 +1,5 @@
+<?php
+
+  $priecinok = "webmax/wbmx";
+
+?>

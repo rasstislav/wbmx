@@ -6,7 +6,6 @@
 #slider 
 {
 	overflow: hidden;
-//	position: relative;
 }
 
 #slider .slide
@@ -41,14 +40,13 @@
 
 #slider .slide-popis h1
 {
+  font-family: "KyrialSansProUltLightCond", sans-serif;
 	width: 100%;
 	font-size: 55px;
 	text-transform: uppercase;
 	text-align: center;
 	padding: 0;
 	margin: 0;
-	font-weight: 200;
-	letter-spacing: 7px;
 	position: inherit;
 	top: 50%;
 	transform: translateY(-50%);
