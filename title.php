@@ -35,6 +35,8 @@
   }
   else
   {
-    $title = "VAĽKO TRANS s.r.o.";
-  }     */
+    $title = "Webmax s.r.o.";
+  }
+*/
+
 ?>
